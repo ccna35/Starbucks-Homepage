@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script
@@ -15,7 +17,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./dist/output.css" />
-    <script src="app.js" defer></script>
+    <script src="./app.js" defer></script>
     <title>Starbucks Coffee Company</title>
   </head>
   <body>
@@ -61,67 +63,306 @@
         </div>
       </div>
     </nav>
-    <section class="flex bg-skyBlue flex-col md:flex-row mt-8">
-      <div><img src="./images/137-83612.jpg" alt="" /></div>
-      <div class="flex justify-center items-center py-8">
-        <div
-          class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
-        >
-          <h1 class="text-6xl font-semibold">Little choices, big changes</h1>
-          <p class="text-2xl">
-            In celebration of earth week, we’re sharing simple planet-positive
-            tips for your next Starbucks visit. Together we can help reduce
-            waste and make an impact.
-          </p>
-          <button
-            class="py-1 px-4 border rounded-full border-black font-semibold"
+    <main>
+      <section class="bg-skyBlue mt-8 flex flex-col md:flex-row">
+        <div class="basis-1/2"><img src="./images/137-83612.jpg" alt="" /></div>
+        <div class="basis-1/2 flex justify-center items-center py-8">
+          <div
+            class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
           >
-            Learn more
-          </button>
+            <h1 class="text-3xl lg:text-6xl font-semibold">
+              Little choices, big changes
+            </h1>
+            <p class="text-2xl">
+              In celebration of earth week, we’re sharing simple planet-positive
+              tips for your next Starbucks visit. Together we can help reduce
+              waste and make an impact.
+            </p>
+            <button
+              class="py-1 px-4 border rounded-full border-black font-semibold"
+            >
+              Learn more
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-starGreen mt-8 text-white flex flex-col md:flex-row-reverse"
+      >
+        <div class="md:basis-1/2">
+          <img
+            src="./images/137-83613.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="md:basis-1/2 flex justify-center items-center py-8">
+          <div
+            class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
+          >
+            <h1 class="text-3xl lg:text-6xl font-semibold">
+              Earn Rewards with a personal cup
+            </h1>
+            <p class="text-2xl">
+              Bring a clean personal cup into a café and you’ll get 10¢ off your
+              drink order, plus 25 Stars for Starbucks® Rewards members. Stars
+              add up to free food and drinks.*
+            </p>
+            <button
+              class="py-1 px-4 border rounded-full border-white font-semibold"
+            >
+              Join Starbucks® Rewards
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-starPink mt-8 flex flex-col md:flex-row">
+        <div class="basis-1/2">
+          <img
+            src="./images/137-83269.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="basis-1/2 flex justify-center items-center py-8 text-slate-900"
+        >
+          <div
+            class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
+          >
+            <h1 class="text-3xl lg:text-6xl font-semibold">
+              Uplifting anytime
+            </h1>
+            <p class="text-2xl">
+              Recharge with a lively Brown Sugar Oatmilk or Toasted Vanilla
+              Oatmilk Shaken Espresso—140 calories or less in a grande.
+            </p>
+            <button
+              class="py-1 px-4 border rounded-full border-black font-semibold"
+            >
+              Order now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-starYellow mt-8 text-gray-800 flex flex-col md:flex-row-reverse"
+      >
+        <div class="md:basis-1/2">
+          <img
+            src="./images/137-83619.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="md:basis-1/2 flex justify-center items-center py-8">
+          <div
+            class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
+          >
+            <h1 class="text-3xl lg:text-6xl font-semibold">Go for goodness</h1>
+            <p class="text-2xl">
+              Choose our tasty Kale & Mushroom Egg Bites with cage-free eggs and
+              Monterey Jack cheese.
+            </p>
+            <button
+              class="py-1 px-4 border rounded-full border-gray-800 font-semibold"
+            >
+              Order now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="bg-skyBlue mt-8 flex flex-col md:flex-row">
+        <div class="basis-1/2">
+          <img
+            src="./images/137-83620.jpg"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="basis-1/2 flex justify-center items-center py-8 text-gray-800"
+        >
+          <div
+            class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
+          >
+            <h1 class="text-3xl lg:text-6xl font-semibold">
+              A trailblazing coffee returns
+            </h1>
+            <p class="text-2xl">
+              Starbucks Odyssey Blend® showcases beans that were grown,
+              cultivated and processed in innovative and responsible ways.
+            </p>
+            <button
+              class="py-1 px-4 border rounded-full border-gray-800 font-semibold"
+            >
+              Order now
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <p class="text-center my-16">
+      *At participating stores. Some restrictions apply. See
+      <a href="http://starbucks.com/rewards" class="underline"
+        >starbucks.com/rewards</a
+      >
+    </p>
+    <footer class="py-12 shadow-inner">
+      <div class="container mx-auto px-4 flex flex-col gap-8">
+        <div class="menus flex flex-col md:flex-row gap-8 justify-between">
+          <div class="box flex flex-col gap-4">
+            <div
+              class="box-header flex justify-between items-center cursor-pointer"
+            >
+              <h2 class="text-lg font-medium">About Us</h2>
+              <i
+                class="fa-solid fa-angle-down transition-all duration-500 md:hidden"
+              ></i>
+            </div>
+            <div
+              class="box-content gap-4 transition-all duration-500 flex flex-col text-gray-500 overflow-hidden max-h-0 md:max-h-full"
+            >
+              <a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a>
+            </div>
+          </div>
+          <div class="box flex flex-col gap-4">
+            <div
+              class="box-header flex justify-between items-center cursor-pointer"
+            >
+              <h2 class="text-lg font-medium">Careers</h2>
+              <i
+                class="fa-solid fa-angle-down transition-all duration-500 md:hidden"
+              ></i>
+            </div>
+            <div
+              class="box-content gap-4 overflow-hidden transition-all duration-500 flex flex-col text-gray-500 max-h-0 md:max-h-full"
+            >
+              <a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a>
+            </div>
+          </div>
+          <div class="box flex flex-col gap-4">
+            <div
+              class="box-header flex justify-between items-center cursor-pointer"
+            >
+              <h2 class="text-lg font-medium">Social Impact</h2>
+              <i
+                class="fa-solid fa-angle-down transition-all duration-500 md:hidden"
+              ></i>
+            </div>
+            <div
+              class="box-content gap-4 overflow-hidden transition-all duration-500 flex flex-col text-gray-500 max-h-0 md:max-h-full"
+            >
+              <a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a>
+            </div>
+          </div>
+          <div class="box flex flex-col gap-4">
+            <div
+              class="box-header flex justify-between items-center cursor-pointer"
+            >
+              <h2 class="text-lg font-medium">For Business Partners</h2>
+              <i
+                class="fa-solid fa-angle-down transition-all duration-500 md:hidden"
+              ></i>
+            </div>
+            <div
+              class="box-content gap-4 overflow-hidden transition-all duration-500 flex flex-col text-gray-500 max-h-0 md:max-h-full"
+            >
+              <a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a>
+            </div>
+          </div>
+          <div class="box flex flex-col gap-4">
+            <div
+              class="box-header flex justify-between items-center cursor-pointer"
+            >
+              <h2 class="text-lg font-medium">Order and Pickup</h2>
+              <i
+                class="fa-solid fa-angle-down transition-all duration-500 md:hidden"
+              ></i>
+            </div>
+            <div
+              class="box-content gap-4 overflow-hidden transition-all duration-500 flex flex-col text-gray-500 max-h-0 md:max-h-full"
+            >
+              <a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a
+              ><a href="#">List item</a><a href="#">List item</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom py-8 flex flex-col gap-8 border-t">
+          <div class="social-links flex gap-4">
+            <i
+              class="fa-brands fa-spotify text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+            <i
+              class="fa-brands fa-facebook text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+            <i
+              class="fa-brands fa-pinterest text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+            <i
+              class="fa-brands fa-instagram text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+            <i
+              class="fa-brands fa-youtube text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+            <i
+              class="fa-brands fa-twitter text-3xl relative after:absolute after:w-0 after:h-0 after:bg-gray-400 after:opacity-40 after:top-1/2 after:left-1/2 after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full after:-z-10 hover:after:w-12 hover:after:h-12 after:transition-all after:duration-500 text-starGrey"
+            ></i>
+          </div>
+          <div class="extra-links flex flex-col gap-4 lg:gap-20 lg:flex-row">
+            <a
+              href="#"
+              class="relative after:absolute after:w-px after:h-5 lg:after:-right-10 after:top-1/2 after:-translate-y-1/2 font-semibold text-starGrey lg:after:bg-gray-700"
+              >Privacy Notice</a
+            >
+            <a
+              href="#"
+              class="relative after:absolute after:w-px after:h-5 lg:after:-right-10 after:top-1/2 after:-translate-y-1/2 font-semibold text-starGrey lg:after:bg-gray-700"
+              >Terms of Use</a
+            >
+            <a
+              href="#"
+              class="relative after:absolute after:w-px after:h-5 lg:after:-right-10 after:top-1/2 after:-translate-y-1/2 font-semibold text-starGrey lg:after:bg-gray-700"
+              >Do Not Share My Personal Information</a
+            >
+            <a
+              href="#"
+              class="relative after:absolute after:w-px after:h-5 lg:after:-right-10 after:top-1/2 after:-translate-y-1/2 font-semibold text-starGrey lg:after:bg-gray-700"
+              >CA Supply Chain Act</a
+            >
+            <a href="#" class="font-semibold text-starGrey"
+              >Cookie Preferences</a
+            >
+          </div>
+          <div class="copyright text-gray-500">
+            © 2023 Starbucks Coffee Company. All rights reserved.
+          </div>
         </div>
       </div>
-    </section>
-    <section class="flex bg-starGreen flex-col md:flex-row mt-8">
-      <div><img src="./images/137-83613.webp" alt="" /></div>
-      <div class="flex justify-center items-center py-8">
-        <div
-          class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
-        >
-          <h1 class="text-6xl font-semibold">
-            Earn Rewards with a personal cup
-          </h1>
-          <p class="text-2xl">
-            Bring a clean personal cup into a café and you’ll get 10¢ off your
-            drink order, plus 25 Stars for Starbucks® Rewards members. Stars add
-            up to free food and drinks.*
-          </p>
-          <button
-            class="py-1 px-4 border rounded-full border-black font-semibold"
-          >
-            Join Starbucks® Rewards
-          </button>
-        </div>
-      </div>
-    </section>
-    <section class="flex bg-starPink flex-col md:flex-row mt-8">
-      <div><img src="./images/137-83269.jpg" alt="" /></div>
-      <div class="flex justify-center items-center py-8 text-white">
-        <div
-          class="text-center w-3/4 flex justify-center items-center flex-col gap-8"
-        >
-          <h1 class="text-6xl font-semibold">Little choices, big changes</h1>
-          <p class="text-2xl">
-            In celebration of earth week, we’re sharing simple planet-positive
-            tips for your next Starbucks visit. Together we can help reduce
-            waste and make an impact.
-          </p>
-          <button
-            class="py-1 px-4 border rounded-full border-black font-semibold"
-          >
-            Learn more
-          </button>
-        </div>
-      </div>
-    </section>
+    </footer>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              skyBlue: "#d4e9e2",
+              starGreen: "#006241",
+              starPink: "#f6bfd9",
+              starYellow: "#fff4d4",
+              starGrey: "#212121",
+            },
+          },
+        },
+      };
+    </script>
   </body>
 </html>
